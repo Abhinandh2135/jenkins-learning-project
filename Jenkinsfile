@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Running tests'
                 bat '''
-                    if not exist missing.html exit /b 1
+                    if not exist index.html exit /b 1
                     echo Test passed
                 '''
             }
